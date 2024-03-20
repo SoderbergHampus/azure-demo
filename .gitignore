@@ -1,6 +1,7 @@
 ### Secrets ###
 *secret*
 *env*
+*.PublishSettings*
 
 ### Data ###
 data/
