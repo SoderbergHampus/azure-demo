@@ -27,7 +27,7 @@ env:
 on:
   push:
     branches: ['hampus']
-    paths: ['./backend/**']
+    paths: ['backend/**']
   workflow_dispatch:
 
 permissions:
