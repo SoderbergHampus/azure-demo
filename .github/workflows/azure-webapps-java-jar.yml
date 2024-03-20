@@ -23,7 +23,7 @@ env:
   AZURE_WEBAPP_NAME: jahr-app-demo # set this to the name of your Azure Web App
   JAVA_VERSION: '17' # set this to the Java version to use
   DISTRIBUTION: zulu # set this to the Java distribution
-  DB_URL: ${{ secrets.DB_URL }}
+  DB_URL: ${{ secrets.secrets_db.DB_URL }}
 
 on:
   push:
