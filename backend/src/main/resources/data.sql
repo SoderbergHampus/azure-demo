@@ -1,3 +1,7 @@
-insert into hello
-values (1, 'Hello from the other side (Our database)')
-on conflict do nothing;
+select * from hello where hello_id = 1;
+
+if (@@ROWCOUNT = 0)
+begin
+    insert into hello
+    values ('Hello from the other side (Our database)')
+end;

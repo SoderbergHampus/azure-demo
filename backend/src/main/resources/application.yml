@@ -12,19 +12,15 @@ spring:
       ddl-auto: update
 
   datasource:
-    driver-class-name: org.postgresql.Driver
     url: ${DB_URL}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
-
-  sql:
-    init:
-      platform: postgresql
-      mode: always
 
   output:
     ansi:
       enabled: always
+
+  sql:
+    init:
+      mode: always
 
   config:
     import: optional:file:.env[.properties]
