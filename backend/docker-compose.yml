@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: 'jahr-demo-app-container'
+    environment:
+      - 'POSTGRES_DB=jahrAppDemoDB'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=user'
+    volumes:
+      - ./data/pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    restart: always
