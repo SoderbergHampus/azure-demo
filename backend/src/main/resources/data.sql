@@ -10,11 +10,11 @@
 --
 -- if (@@ROWCOUNT = 0)
 -- begin
-insert into dog
+insert into dog (name, description, img_ref)
 values ('Elsa', 'A small, stubborn, and lovely old lady',
         'https://svenskanorfolkterrierklubben.se/wp-content/uploads/irenes1.jpg');
 
-insert into dog
+insert into dog (name, description, img_ref)
 values ('Wilma', 'A small, dumber, less stubborn old lady',
         'https://svenskanorfolkterrierklubben.se/wp-content/uploads/irenes1.jpg');
 -- end;
