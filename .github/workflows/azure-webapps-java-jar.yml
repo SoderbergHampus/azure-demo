@@ -20,7 +20,7 @@
 name: Build and deploy our JAR app
 
 env:
-  AZURE_WEBAPP_NAME: jahr-app-demo # set this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: haso-app # set this to the name of your Azure Web App
   JAVA_VERSION: '17' # set this to the Java version to use
   DISTRIBUTION: zulu # set this to the Java distribution
   DB_URL: ${{ secrets.DB_URL }}
@@ -40,6 +40,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: 'main' 
 
       - name: Set up Java version
         uses: actions/setup-java@v3.0.0
