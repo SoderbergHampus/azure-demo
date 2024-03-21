@@ -1,9 +1,10 @@
 import './App.css';
+import DogViewer from './components/DogViewer';
 
 function App() {
   return (
     <>
-      <div>Hello world</div>
+      <DogViewer />
     </>
   );
 }

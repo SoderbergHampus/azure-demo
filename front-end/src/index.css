@@ -4,4 +4,8 @@
   body {
     @apply bg-section text-primary;
   }
+
+  h1 {
+    @apply text-2xl;
+  }
 }
