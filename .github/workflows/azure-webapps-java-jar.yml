@@ -41,7 +41,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: 'hapus' 
+          ref: 'hampus' 
 
       - name: Set up Java version
         uses: actions/setup-java@v3.0.0
