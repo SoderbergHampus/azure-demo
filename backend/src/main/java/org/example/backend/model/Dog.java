@@ -9,13 +9,13 @@ public class Dog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "name")
     private String name;
 
-    @Column
+    @Column(name = "description")
     private String description;
 
-    @Column
+    @Column(name = "img_ref")
     private String imgRef;
 
     public Dog() {
